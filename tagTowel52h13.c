@@ -28,8 +28,8 @@ either expressed or implied, of the Regents of The University of Michigan.
 #include <stdlib.h>
 #include "tagTowel52h13.h"
 
-static uint64_t codedata[48714] = {
-      0x0004064a19651ff1UL,
+static uint64_t codedata[167] = {
+   0x0004064a19651ff1UL,
    0x0004064a53f425b6UL,
    0x0004064a8e832b7bUL,
    0x0004064ac9123140UL,
@@ -203,7 +203,7 @@ apriltag_family_t *tagTowel52h13_create()
    apriltag_family_t *tf = calloc(1, sizeof(apriltag_family_t));
    tf->name = strdup("tagTowel52h13");
    tf->h = 13;
-   tf->ncodes = 48714;
+   tf->ncodes = 167;
    tf->codes = codedata;
    tf->nbits = 52;
    tf->bit_x = calloc(52, sizeof(uint32_t));
